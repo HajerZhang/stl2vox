@@ -9,12 +9,12 @@ This is a Simple Voxelizer Program for convert the file type between .stl and .v
 
 First, clone the repository and configure the build directory:
 ```
-cmake -B build -DCMAKE_BUILD_TYPE="Release"
-cmake --build build
+cd stl2vox
+g++ main.cpp -O3 -o main
 ```
 Then, you can run the program with the following command:
 ```
-./main ./model/sofa.stl
+./main ../model/sofa.stl
 ```
 
 ## Results
@@ -28,7 +28,7 @@ Then, you can run the program with the following command:
 
 ## Authors
 * Hajer Zhang, IDEAS, DLUT, China
-* Email: zbaili966@gmail.com
+* Email: howizezhang@gmail.com
 * Date: 2024.12.18
 
 ## Update
@@ -44,5 +44,7 @@ Then, you can run the program with the following command:
 </div>
 
 <p style="text-align: center;">Figure 2: Comparison of the algorithm before (left) and after (right) of bunny model.</p>
+
+* 2025-11-2：Change Project InsideVoxels to Flood Fill.
 
 
